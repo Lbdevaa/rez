@@ -2,12 +2,12 @@ $(function() {
 
 	// swiper
 
-	var swiper = new Swiper('.swiper-container', {
-		slidesPerView: 3,
+	var swiper = new Swiper('.product-swiper', {
+		slidesPerView: 4,
 		spaceBetween: 30,
 		pagination: {
-		  el: '.swiper-pagination',
-		  clickable: true,
+			el: '.swiper-pagination',
+			type: 'progressbar',
 		},
 	  });
 

@@ -4,6 +4,132 @@
 @import "base"
 // @import "icons"
 
-// Пользовательские стили
+
+.text
+    &_bold
+        font-weight: bold
+    &_red
+        color: $red
+
+.main-btn
+    background-color: $red
+    color: #ffffff
+    font-size: em(18px)
+    padding: em(10px) em(83px)
+    border-radius: 60px
+    text-decoration: none
+    transition: all ease-in .4s
+    text-align: center
+    border: 2px solid $red
+    // display: block
+    &:hover
+        color: $red
+        background-color: #fff
+.section-title
+    text-transform: uppercase
+    font-size: em(36px)
+.header
+    padding: 30px 0
+    >div
+        grid-template-columns: max-content max-content
+        justify-content: space-between
+        align-items: center
+    &__phone
+        margin: 0
+        font-weight: bold
+        font-size: em(24px)
+
+.banner
+    position: relative
+    &__bg
+        background: url('../img/banner.png')  no-repeat center center
+        background-size: cover
+        position: absolute
+        height: 100%
+        width: 100vw
+        z-index: -1
+    >.container
+        padding: 80px 20px
+    &__main
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 100px
+        grid-row-gap: 50px
+        align-items: center
+        margin-bottom: 90px
+    &__title
+        font-size: em(48px)
+        font-weight: 300
+        margin: 0
+        text-transform: uppercase
+    &__subtitle
+        font-size: em(18px)
+        padding-left: em(20px)
+        margin: 0
+        position: relative
+        &::before
+            content: ''
+            background-image: url('../img/banner__subtitle-before.svg')
+            position: absolute
+            left: -10px
+            height: 100%
+            width: 10px
+    &__img
+        grid-column: 2/3
+        grid-row: 1/4
+    &__btn
+        max-width: max-content
+    &__items
+        grid-template-columns: 1fr 1fr 1fr
+        grid-column-gap: 140px
+        
+    &__item
+        // max-width: 310px
+        grid-template-columns: max-content 1fr
+        grid-column-gap: 20px
+    &__item-text
+        margin: 0
+.popular
+    padding: 50px 0 75px
+.product-swiper
+    &__wrap
+        margin-bottom: 50px
+    &__slide
+        justify-items: center
+        background: #FFFFFF
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25)
+        border-radius: 20px
+        grid-row-gap: 30px
+    &__img
+        width: 100%
+        height: 220px
+        object-fit: cover 
+    &__name
+        font-size: em(18px)
+        font-weight: 300
+        margin: 0
+        margin-bottom: em(30px) 
+    &__btn
+        border: 2px solid $red
+        font-size: em(18px)
+        padding: em(13px) em(26px)
+        border-radius: 60px
+        text-decoration: none
+        color: $red
+        margin-bottom: em(30px)
+        transition: all ease-in .4s
+        &:hover
+            color: #ffffff
+            background-color: $red
+    &__pag
+        height: 10px !important
+        background-color: rgba(227, 33, 64, 0.05)
+        border-radius: 40px 
+        top: auto !important
+        bottom: 0 
+        >span
+            --swiper-theme-color: #E32140
+            border-radius: 40px
+
+        
 
 @import "media" // Всегда в конце
