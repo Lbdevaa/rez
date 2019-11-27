@@ -4,6 +4,10 @@
 @import "base"
 // @import "icons"
 
+//nav
+// :root
+.swiper-container
+    --swiper-theme-color: #E32140
 
 .text
     &_bold
@@ -20,7 +24,8 @@
     text-decoration: none
     transition: all ease-in .4s
     text-align: center
-    border: 2px solid $red
+    border: 2px solid $red 
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1)
     // display: block
     &:hover
         color: $red
@@ -28,31 +33,36 @@
 .section-title
     text-transform: uppercase
     font-size: em(36px)
+    font-weight: 500
+.logo
+    max-width: 400px
+    max-height: 70px
 .header
     padding: 30px 0
+    border-bottom: 1px solid #E32140
     >div
         grid-template-columns: max-content max-content
         justify-content: space-between
         align-items: center
-    &__phone
-        margin: 0
-        font-weight: bold
-        font-size: em(24px)
+.phone-box__text
+    margin: 0
+    font-weight: bold
+    font-size: em(24px)
+    text-decoration: none
+    color: $dark
 
-.banner
-    position: relative
-    &__bg
-        background: url('../img/banner.png')  no-repeat center center
-        background-size: cover
-        position: absolute
-        height: 100%
-        width: 100vw
-        z-index: -1
-    >.container
+.banner 
+    background: url('../img/banner.png')  no-repeat center center
+    background-size: cover 
+    height: 100%
+    width: 100vw
+    z-index: -1
+    >div
         padding: 80px 20px
     &__main
         grid-template-columns: 1fr 1fr
-        grid-column-gap: 100px
+        // grid-column-gap: 100px
+        // grid-column-gap: 30px
         grid-row-gap: 50px
         align-items: center
         margin-bottom: 90px
@@ -76,47 +86,53 @@
     &__img
         grid-column: 2/3
         grid-row: 1/4
+        border-radius: 20px  
     &__btn
         max-width: max-content
     &__items
         grid-template-columns: 1fr 1fr 1fr
         grid-column-gap: 140px
+        grid-row-gap: 30px 
         
     &__item
         // max-width: 310px
         grid-template-columns: max-content 1fr
         grid-column-gap: 20px
+        align-items: center
     &__item-text
         margin: 0
 .popular
     padding: 50px 0 75px
+    &__title
+        margin: 0 0 em(10px)
 .product-swiper
+    margin-left: -30px
     &__wrap
         margin-bottom: 50px
+        padding-top: 30px
+        // padding: 30px 30px 0 25px
     &__slide
         justify-items: center
         background: #FFFFFF
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25)
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25)
         border-radius: 20px
         grid-row-gap: 30px
     &__img
         width: 100%
         height: 220px
         object-fit: cover 
+        border-radius: 20px 20px 0 0
     &__name
         font-size: em(18px)
         font-weight: 300
         margin: 0
         margin-bottom: em(30px) 
-    &__btn
-        border: 2px solid $red
-        font-size: em(18px)
-        padding: em(13px) em(26px)
-        border-radius: 60px
-        text-decoration: none
+    &__btn  
+        padding: em(13px) em(26px) 
         color: $red
         margin-bottom: em(30px)
         transition: all ease-in .4s
+        background-color: #fff
         &:hover
             color: #ffffff
             background-color: $red
@@ -126,10 +142,94 @@
         border-radius: 40px 
         top: auto !important
         bottom: 0 
+        left: 30px !important
         >span
             --swiper-theme-color: #E32140
             border-radius: 40px
 
-        
+.advantages
+    background: url('../img/advantages-bg.png') no-repeat center center
+    background-size: cover
+    padding: 50px 0 70px
+    >div
+        grid-template-columns: max-content 510px
+        grid-column-gap: 80px
+        grid-row-gap: 20px
+    &__title
+        margin: 0 0 em(22px)
+        // grid-column: 1/3
+    &__text
+        font-size: em(18px)
+        margin: 0
+        font-family: $PN
+        max-width: 470px
+
+.advantages-swiper
+    max-width: 100%
+    grid-column: 2/3
+    grid-row: 1/3
+    &__slide
+        max-width: 515px
+        overflow: hidden 
+        border-radius: 20px
+        max-height: 280px
+    &__img
+
+.presence
+    padding: 55px 90px
+    border-bottom: 1px solid #E32140
+    &__title
+        margin: 0 0 em(34px)
+        max-width: 700px
+    &__form
+        grid-template-columns: repeat(3, max-content)
+        grid-row-gap: 20px
+        justify-content: space-between
+        align-items: center
+    &__input
+        max-width: 320px
+        text-align: left
+        color: $red
+        // margin-bottom: em(30px) 
+        background-color: #fff 
+        font-weight: light
+        font-size: em(18px) 
+        padding: em(13px) em(40px)
+        border: 1px solid #E32140
+        line-height: 1.65
+        font-family: $R
+        font-weight: 300
+    &__btn
+        line-height: 1.65
+        cursor: pointer
+        font-size: em(18px)
+.footer
+    padding: 40px 0 70px
+    >div
+        grid-template-columns: max-content max-content
+        justify-content: space-between
+    &__phone-box
+        grid-column: 2/3
+        grid-row: 1/3
+    &__logo
+        margin-bottom: 35px
+        font-family: $PN
+    &__info
+        margin: 0
+
+
+html, body 
+    // position: relative
+    // height: 100%
+    
+// .swiper-slide   
+//     background: #000
+//     height: calc((100% - 30px) / 2)  
+//     display: flex 
+//     justify-content: center 
+//     align-items: center
+
+// .swiper-container  
+//     height: 100% 
 
 @import "media" // Всегда в конце

@@ -14,27 +14,26 @@
 	<link rel="apple-touch-icon" sizes="192x192" href="img/favicon.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css?ver=1.0.3">
 
 </head>
 
 <body>
 	<header class="header">
 		<div class="container grid">
-			<img src="img/logo.svg" alt="" class="header__logo">
-			<div class="header__phone-box">
-				<p class="header__phone">8 (999) 234-43-44</p>
+			<img src="img/logo.svg" alt="" class="logo header__logo img-responsive">
+			<div class="phone-box header__phone-box">
+				<a href="callto:+79992344344" class="phone-box__text">8 (999) 234-43-44</a>
 			</div>
 		</div>
 	</header>
-	<section class="banner">
-		<div class="banner__bg"></div>
+	<section class="banner"> 
 		<div class="container">
 			<div class="banner__main grid">
 					<h1 class="banner__title"> <span class="text_red text_bold">Металлорежущий</span>  инструмент из <div class="text_bold">россии</div> </h1>
 					<p class="banner__subtitle"> Лучшее сочетание цены и качества</p>
 					<a href="#" class="main-btn banner__btn">Получить прайс</a>
-					<img src="img/banner__img.png" alt="" class="banner__img">
+					<img src="img/banner__img.png" alt="" class="banner__img img-responsive">
 			</div> 
 			<div class="banner__items grid">
 				<div class="banner__item grid">
@@ -54,54 +53,101 @@
 	</section>
 	<section class="popular"> 
 			<div class="container"> 
-				<h2 class="section-title popular__title"> <span class="text_red">ПОПУЛЯРНЫЕ</span> ТОВАРы</h2>
+				<h2 class="section-title popular__title"> <span class="text_red text_bold">ПОПУЛЯРНЫЕ</span> ТОВАРы</h2>
 				<div class="product-swiper swiper-container"> 
 					<div class="product-swiper__wrap swiper-wrapper">
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product1.png" alt="" class="product-swiper__img img-responsive">
 							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
 						</div> 
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product2.png" alt="" class="product-swiper__img img-responsive">
 							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
 						</div> 
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product3.png" alt="" class="product-swiper__img img-responsive">
-							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
+							<p class="product-swiper__name">Метчики</p>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
 						</div> 
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product4.png" alt="" class="product-swiper__img img-responsive">
-							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
+							<p class="product-swiper__name">Монолитные фрезы</p>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
 						</div> 
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product5.png" alt="" class="product-swiper__img img-responsive">
-							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
+							<p class="product-swiper__name">Оснастка</p>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
 						</div> 
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product6.png" alt="" class="product-swiper__img img-responsive">
-							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
+							<p class="product-swiper__name">Твердосплавные пластины</p>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
 						</div> 
 						<div class="product-swiper__slide swiper-slide grid">
 							<img src="img/product7.png" alt="" class="product-swiper__img img-responsive">
-							<p class="product-swiper__name">Корпусные фрезы</p>
-							<a href="#" class="product-swiper__btn">Узнать о наличии</a>
-						</div> 
+							<p class="product-swiper__name">Резцы</p>
+							<a href="#" class="product-swiper__btn main-btn">Узнать о наличии</a>
+						</div>  
 					</div>
 					<div class="product-swiper__pag swiper-pagination"></div>
 					
-				</div> 
-
+				</div>  
 			</div>
 	</section>
-	
-	
-	<script src="js/scripts.min.js"></script>
+	<section class="advantages">
+		<div class="container grid">
+			<h2 class="section-title advantages__title"> <span class="text_red text_bold">ПОЧЕМу</span>  МЫ?</h2>
+			<div class="advantages__text-box">
+				<p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+			</div>
+			<div class="advantages-swiper swiper-container advantages__swiper"> 
+				<div class="advantages-swiper__wrap swiper-wrapper">
+					<div class="advantages-swiper__slide swiper-slide">
+						<img src="img/advantage1.png" alt="" class="advantages-swiper__img img-responsive">
+					</div> 
+					<div class="advantages-swiper__slide swiper-slide">
+						<img src="img/advantage2.png" alt="" class="advantages-swiper__img img-responsive">
+					</div> 
+					<div class="advantages-swiper__slide swiper-slide">
+						<img src="img/advantage3.png" alt="" class="advantages-swiper__img img-responsive">
+					</div> 
+				</div> 
+				  <!-- Add Arrows -->
+				  <div class="swiper-button-next"></div>
+				  <div class="swiper-button-prev"></div>
+				  <div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<section class="presence">
+		<div class="container">
+			<h2 class="presence__title section-title"> <span class="text_red text_bold">Узнайте о наличии </span> необходимого
+					Вам товара с выгодой до 40%!</h2>
+			<form action="" class="presence__form grid">
+				<input name="name" type="text" class="presence__input main-btn" placeholder="Ваше имя" required>
+				<input name="email" type="text" class="presence__input main-btn" placeholder="Почта" required>
+				<button type="submit" class="presence__btn main-btn">Получить прайс</button>
+			</form>
+		</div>
+	</section>
+  
+	<footer class="footer">
+		<div class="container grid">
+			<img src="img/logo.svg" alt="" class="logo footer__logo img-responsive">
+			<div class="footer__info-box">
+				<p class="footer__info">ООО «РЕЗ» ОГРН 1187267336409,</p>
+				<p class="footer__info">ИНН 7811714911, КПП 782201001</p>
+				<p class="footer__info">192019, Екатеринбург, ул. Шейнкмана, дом 119, помещение 1</p>
+			</div>
+			<div class="phone-box footer__phone-box">
+				<a href="callto:+79992344344" class="phone-box__text">8 (999) 234-43-44</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/scripts.min.js?ver=1.0.3"></script>
 
 </body>
 </html>
